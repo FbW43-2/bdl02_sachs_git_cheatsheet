@@ -29,7 +29,7 @@ If any `git` command that we run that we run gives the following output:
 
 > fatal: not a git repository (or any of the parent directories): .git
 
-It means we are not in a git project.
+It means **we are not in a git project**.
 
 In such case we can:
 
@@ -44,3 +44,9 @@ To initialize git, run
 
 This command create an empty Git repo.
 From now on we can make changes to our files and permanently save those changes.
+
+## 4. Save changes
+
+1. `git add .` (or `git add -A`)
+2. `git commit -m "meaningful message here"`
+3. `git push`
