@@ -53,7 +53,7 @@ From now on we can make changes to our files and permanently save those changes.
 
 2. `git commit -m "meaningful message here"`
 
-A commit is the Git equivalent of a "save".
+A commit is the Git equivalent of a "save". Commits can be thought as a snapshot of our project at a given time.
 
 3. `git push` 
 
