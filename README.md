@@ -76,6 +76,8 @@ From now on we can make changes to our files and permanently save those changes.
 
 A commit is the Git equivalent of a "save". Commits can be thought as a snapshot of our project at a given time.
 
+You can also **quick commit** by using `git commit -am`
+
 3. `git push` 
 
 This command send the committed changes to the server. It is used to upload local repository content to a remote repository. 
