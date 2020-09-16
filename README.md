@@ -82,5 +82,28 @@ You can also **quick commit** by using `git commit -am`
 
 This command send the committed changes to the server. It is used to upload local repository content to a remote repository. 
 
-small change
-some more changes
+## 5. Branching
+
+1. `git branch`
+
+List all of the branches in your repository. This is synonymous with git branch --list.
+
+2. `get branch name`
+
+Create a new branch called name. This does not check out the new branch.
+
+3. `git branch -d`
+
+Delete the specified branch. This is a “safe” operation in that Git prevents you from deleting the branch if it has unmerged changes.
+
+4. `git branch -D`
+
+Force delete the specified branch, even if it has unmerged changes. This is the command to use if you want to permanently throw away all of the commits associated with a particular line of development.
+
+5. `git branch -m`
+
+Rename the current branch to .
+
+6. `git branch -a`
+
+List all remote branches. 
