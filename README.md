@@ -107,3 +107,28 @@ Rename the current branch to .
 6. `git branch -a`
 
 List all remote branches. 
+
+
+## 6. Merging
+
+### Assuming:
+- we are on a separate branch. Note: it can be checked by running git `branch -l`
+
+- we have added and committed all our changes
+
+we are now ready to merge our changes back to the main branch (which is usually master). It's time to:
+
+1) Move to branch that you want to merge your changes on.
+
+	E.g:  `git checkout master`
+	
+	after checking out on master, its always good practice to pull the latest changes from the origin with:
+	git pull
+	
+2) Merge the changes from the source branch (the one where we committed our changes on) with:
+
+	`git merge my-username/source-branch`
+
+3) Save our changes to the server
+
+ `git push`
