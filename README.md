@@ -82,5 +82,53 @@ You can also **quick commit** by using `git commit -am`
 
 This command send the committed changes to the server. It is used to upload local repository content to a remote repository. 
 
-small change
-some more changes
+## 5. Branching
+
+1. `git branch`
+
+List all of the branches in your repository. This is synonymous with git branch --list.
+
+2. `get branch name`
+
+Create a new branch called name. This does not check out the new branch.
+
+3. `git branch -d`
+
+Delete the specified branch. This is a “safe” operation in that Git prevents you from deleting the branch if it has unmerged changes.
+
+4. `git branch -D`
+
+Force delete the specified branch, even if it has unmerged changes. This is the command to use if you want to permanently throw away all of the commits associated with a particular line of development.
+
+5. `git branch -m`
+
+Rename the current branch to .
+
+6. `git branch -a`
+
+List all remote branches. 
+
+
+## 6. Merging
+
+### Assuming:
+- we are on a separate branch. Note: it can be checked by running git `branch -l`
+
+- we have added and committed all our changes
+
+we are now ready to merge our changes back to the main branch (which is usually master). It's time to:
+
+1) Move to branch that you want to merge your changes on.
+
+	E.g:  `git checkout master`
+	
+	after checking out on master, its always good practice to pull the latest changes from the origin with:
+	git pull
+	
+2) Merge the changes from the source branch (the one where we committed our changes on) with:
+
+	`git merge my-username/source-branch`
+
+3) Save our changes to the server
+
+ `git push`
